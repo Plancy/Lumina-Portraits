@@ -19,3 +19,88 @@
         font-size: 30px;
     }
 }
+
+/* Компактный адаптив для block_1 */
+@media screen and (max-width: 900px) {
+    .block_1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .block_1_left,
+    .block_1_right {
+        width: 50%;
+        min-width: 120px;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .block_1_left {
+        order: 1;
+        align-items: flex-start;
+        text-align: left;
+        gap: 16px;
+    }
+
+    .block_1_right {
+        order: 2;
+        display: flex;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+
+    .block_1_right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        max-height: none;
+    }
+
+    .block_1_left h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .block_1 {
+        flex-direction: column;
+    }
+
+    .block_1_left,
+    .block_1_right {
+        width: 100%;
+        min-width: unset;
+        padding: 8px;
+    }
+
+    .block_1_right {
+        order: 1;
+    }
+
+    .block_1_left {
+        order: 2;
+        gap: 10px;
+    }
+
+    .block_1_right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        max-height: none;
+    }
+
+    .block_1_left h2 {
+        font-size: 16px;
+    }
+
+    .block_1_left p,
+    .block_1_left button {
+        font-size: 12px;
+    }
+
+    .block_1_left button {
+        padding: 6px 12px;
+    }
+}
