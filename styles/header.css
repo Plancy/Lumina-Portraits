@@ -1,0 +1,83 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.logo h1 {
+    font-size: 20px;
+    color: #333;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.social_icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social_icons img {
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+.social_icons h3 {
+    font-size: 10px;
+}
+
+.burger-toggle {
+    display: none;
+}
+
+.burger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 2000;
+    background: transparent;
+    padding: 0;
+    border-radius: 50%;
+    box-shadow: none;
+    transition: background 0.2s;
+}
+
+.burger-icon:hover {
+    background: #f0f0f0;
+}
+
+.burger-icon span {
+    display: block;
+    height: 4px;
+    width: 26px;
+    background: #222;
+    margin: 5px 0;
+    border-radius: 3px;
+    transition: 0.3s;
+}
