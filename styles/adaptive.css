@@ -455,3 +455,37 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+/*  */
+@media (max-width: 600px) {
+    .write-to-us {
+        padding: 20px 10px;
+    }
+
+    .write-to-us .row-1,
+    .write-to-us .row-2,
+    .write-to-us .row-3,
+    .write-to-us .row-4,
+    .write-to-us .row-5 {
+        flex-direction: column;
+        display: flex;
+        gap: 12px;
+    }
+
+    .write-to-us [class^="col-"] {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .write-to-us .checkbox-group {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .write-to-us button[type="submit"] {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 12px 0;
+    }
+}
